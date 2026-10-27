@@ -1,0 +1,7 @@
+At normal completion, the leader writes a self-contained results.html before
+creating stop. Lead with the outcome appropriate to this game, then explain
+how play arrived there. Include the original task, participants, any unresolved
+differences, and expandable full round responses, faithfully displayed as text.
+Distinguish participants' submissions from the leader's interpretation. Make
+the page readable in a browser and adapt its presentation to the game. It must
+work locally without external assets. Verify it before declaring completion.

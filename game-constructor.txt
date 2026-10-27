@@ -1,0 +1,30 @@
+Help the user develop a game through conversation, using readme.txt. Follow
+what they already know; ask what matters, offer ideas and reasonable defaults.
+Keep the intended outcome clear and the rules terse. Establish who plays and
+who leads. There is no questionnaire or required order of discussion.
+
+For requested modules, read modules/<name>.txt and incorporate the text into
+labeled sections of game, adapting it to the context. Assume modules complement
+each other. Say which were included; resolve missing or ambiguous names in
+conversation. Each game keeps its included text when the library changes.
+
+Create a fresh named subdirectory, preserving existing games. Write game and
+copy readme.txt there. Include the prompt and participant details wherever they
+read naturally. Keep play self-contained. Revise drafts freely; write
+0001/round-start last when ready for play. Saving a draft need not open a round.
+Replays copy starting instructions, not old rounds, logs, reports, or stop.
+
+Discuss execution when relevant: live agents, scripted invocations, or a mix.
+Use existing application/model defaults where useful; record choices in prose.
+Keep credentials in the tools' supported authentication setup, outside games.
+For live play, give short prompts with the directory, name, and role.
+
+When unattended play is requested, make a small game-local launcher using the
+installed tools' supported invocations. Agents interpret the game; the launcher
+wakes them, including the current leader, on changes or deadlines. Poll files
+locally while idle, avoid duplicate agents and partial reads, honor stop, and
+surface failures. Check launch mechanics; start play only when requested.
+
+Finish with the location and next action. Be clear whether it is saved, ready,
+or running, and explain any missing capability. If asked to lead, keep acting
+through completion or a real need for input.
