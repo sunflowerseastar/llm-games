@@ -1,12 +1,17 @@
 LLM games
 
-Start an agent here: "Read readme.txt and help me make a two-player game with
-report-html." For construction, read game-constructor.txt. Modules are short
-.txt files in modules/ included when requested.
+In the machinery checkout, start an agent with: "Read readme.txt and help me
+make a game." For construction, read game-constructor.txt. Modules are short
+.txt files in modules/ included when requested, such as report-html.
 
-Each game is its own directory. Its game file describes the game; this readme
-is the shared protocol, copied into that directory when it is constructed.
-The files are the game's memory. A fresh agent can continue from them.
+The instructions themselves are the machinery. Use ordinary language and the
+few file conventions below. Agents work out how to use their available tools;
+the project does not prescribe commands, scripts, or metadata formats.
+
+Each game is its own directory, independent of the machinery checkout. Its
+game file describes the game; this readme is the shared protocol, copied there
+at construction. The files are the game's memory. A fresh agent can continue
+from them, even after the directory is moved.
 
 Roles
 
@@ -14,19 +19,22 @@ Give each agent its game directory, a distinct single-word name unused as a
 filename, and its initial role: player or leader. The leader facilitates and
 plays only if the game says so. Leadership transfers override initial roles.
 
-Live: act, wait, check, repeat until stopped or needing clarification. Ten
-seconds is a useful default. Keep the session active while responsible for play.
+Start with an interactive leader and non-interactive players. The interactive
+session arranges play and stays active until stopped or needing clarification.
+Each player reads the state, does what is due, logs it, and exits. If waiting
+on someone else, log that and exit; the session arranging play brings you back.
+Only one instance of each participant may act at a time. Files must suffice for
+continuation without private conversation history.
 
-Scripted: read the state, do what is due, log it, and exit. The caller handles
-waiting and waking you again. This applies to leaders too. Modes can mix;
-only one instance of each participant may act at a time. Files, rather than
-private conversation history, must suffice for continuation.
+The game leader decides what happens in play; arranging turns is a separate
+responsibility. If leadership transfers, the initial interactive session keeps
+arranging turns, including for the new leader, without keeping the old role.
 
 Play
 
 - Stay inside your game's directory and subdirectories unless its instructions
-  explicitly authorize external scope. Game construction takes place at the
-  project root and may read shared materials and create game directories.
+  explicitly authorize external scope. During construction, read the shared
+  materials and create the game in the user's chosen location.
 - Rounds are numbered subdirectories, one open at a time. The leader opens a
   round by writing round-start: who may play, what to submit, the filenames,
   and when it ends. Follow those instructions.
@@ -52,10 +60,18 @@ Play
 
 Running
 
-Creating files does not launch agents. For unattended play, ask the constructor
-for a game-local launcher; none is bundled. It must wake agents, including the
-leader, rather than merely print changes. Supply credentials through the tools'
-existing setup. Stop or a failure needing attention halts further invocations.
+Creating files does not start play. When asked to run a game, bring in the
+requested players non-interactively using what is available here. Give each
+its name, initial role, game directory and these instructions. Find out what
+you can; ask only for what is missing. Use existing authentication and explain
+unavailable choices rather than silently replacing a requested agent or model.
+
+Follow the files to see what is due and what has been done. Bring participants
+back when they have more to do, even within the same round. Check deadlines
+even when no files change. A finished invocation is not proof of a completed
+move. Keep play moving, honor stop, and bring failures needing attention to the
+user. If the interactive session ends, play needs someone to resume arranging
+turns; do not promise that it will continue by itself.
 
 To replay, construct a fresh sibling game from the starting instructions.
 To resume, continue in the existing directory with its recorded state.
