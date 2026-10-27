@@ -1,6 +1,4 @@
-Read readme.txt. If the user wants to create or adapt a game, also read
-game-constructor.txt. The instructions themselves are the machinery: keep them
-terse and in ordinary language. Do not add command recipes, launcher scripts,
-or required metadata formats. Agents use the capabilities available to them.
-Games live in the user's chosen location, by default games/, independently of
-this machinery. Start with an interactive leader and non-interactive players.
+Read readme.txt. It contains the shared instructions for discussing, creating,
+inspecting and running games; no separate constructor instructions are needed.
+Keep the machinery terse and in ordinary language. Games are independent of
+this checkout. Follow the user's request; finding a game is not a request to run it.
