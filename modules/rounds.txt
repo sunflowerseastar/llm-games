@@ -1,0 +1,29 @@
+Rounds
+
+Use this procedure when the game calls for a leader and numbered rounds.
+Include the adopted instructions in game. Specify the task, participants,
+leader, activities and ending, and the product or history to carry forward.
+
+An arranging session invokes the requested players non-interactively using
+available tools and existing authentication. Give each the game directory,
+initial role and a distinct single-word name unused as a filename. Returning
+players retain their names. One instance acts per identity. The leader takes
+a player's turn only if the game gives it one.
+
+The arranger stays available, inspects actual submissions, checks any deadlines
+and brings players back when work is due. Players with nothing due log the
+reason and exit. An exit alone does not finish a move. If arrangement is
+interrupted, leave an explicit handoff. Leadership transfer leaves arrangement
+with the original session unless reassigned.
+
+Keep one numbered round open at a time. To open it, the leader writes
+round-start with who acts, what they submit, filenames and the closing
+condition. Read game, your log, the latest round-results and relevant
+instructions and submissions. Check existing work before retrying.
+
+Append meaningful actions, decisions, problems and pending work to the file
+of your name, prefixed with the round number or a dash before play. Within
+the game preserve published work. Record corrections and new direction in
+new files. Only your own log is appended to. The leader closes a round by
+renaming round-start to round-end and writing round-results with the outcome,
+next action and next leader. Without a named successor, leadership stays.
