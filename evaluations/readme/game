@@ -9,6 +9,13 @@ own the choice of how to get there. Ask a third to discuss the arrangement
 before saving anything. Have someone else reserve one more request and its
 observable success condition before the editor sees it.
 
+For the public entry point, give a stranger in an unrelated repository just
+the source repository URL and a loosely worded request to fix something
+there. Compare with the same request to discuss it first. Inspect the original
+working tree and see whether a new participant can recover the outcome.
+Leave a stopped sibling task in place. Check that the new task can proceed,
+that the sibling stays intact, and that existing Git ignore settings survive.
+
 Inspect the files for an actual mismatch. Try the smallest edit that could
 fix it. Compare both readmes with the same requests, product, model, tools
 and turn limit in fresh directories. Repeat the decisive case, try another

@@ -1,32 +1,41 @@
 LLM games
 
-The user and an agent talk an activity into a plaintext game for other
-agents to play. Follow what the user asks of you now. A discussion stays a
-discussion. A request to save authorizes setup. Finish that turn with the
-game ready for its players. Play begins on a request to start.
+When the user points here from another project, that project is your
+workplace. Read its local instructions and inspect the relevant files.
+Work on its existing product in place unless the user asks for a copy.
 
-In the requested fresh directory, put the agreement in a file named game
-beside a copy of this readme and any starting work the user wants carried
-forward. Use relative paths. Keep the user's own task wording, including who
-owes what to whom. Say enough for a stranger to begin without this chat.
+Follow the request in the user's own terms. “Can you accomplish this?”
+authorizes arranging the work and carrying it through verification. If the
+user wants to talk first, discuss it. If they ask only for setup, save the
+game and leave it ready. Continue an existing game from its record.
 
-Write down what the user has settled and who may settle what remains. When
-the players own a choice, leave it theirs to make during play. Ask about a
-consequential choice the user has reserved. If useful, borrow instructions
-from modules/ or earlier games and include what you adopt in game.
+Before doing a new task, save its game. Use the requested location or create
+.llm-games/<task>/ at the working project's root. Choose a fresh, descriptive
+directory for each new game. Keep its agreement and play records together
+there. Follow the host project's tracking convention; change Git ignore
+settings only when asked.
 
-During play the game files are the shared authority. Read the agreement and
-relevant record before acting. Record decisions, work done, and what is due.
-Keep enough history for a fresh participant to continue. Resolve conflicting
-instructions before dependent work. Act within the authorized scope.
+Copy this file into the game directory as readme.txt. In a plaintext file
+named game, keep the user's task wording, the intended result and the scope
+of work. Use relative paths. Include enough for a stranger to begin.
 
-Whoever arranges play brings the requested participants to their turns.
-Record actual models and interruptions. If a participant is unavailable,
-report it. Check completed work before advancing or retrying.
+Write down what the user has settled and who may settle what remains.
+Choose the participants and method when the user leaves them to you. Leave
+decisions entrusted to the players for them to make. Ask when a consequential choice
+still belongs to the user. Each game determines how its participants work. If useful,
+borrow from modules/ beside this readme in the source repository and
+include whatever you adopt in game.
 
-Look for a file named stop anywhere in the game directory before acting and
-while working. Its presence halts play. Resume only when authorized and the
-reason for stopping is resolved. At normal completion verify the deliverable,
-record the outcome and create stop.
+As arranger, discover what participants and tools are available, bring the
+requested participants to their turns, and check actual work before advancing
+or retrying. Record the models used and any interruption. If a requested
+participant is unavailable, report it.
 
-Each game determines the rest.
+The game files are the shared record for play. Read them before acting.
+Record decisions, work done and what is due. Resolve material conflicts
+before dependent work. Stay within the authorized scope.
+
+Look for a file named stop anywhere inside the current task directory before
+acting and while working. It halts that game alone. Resume only when authorized and the
+reason for stopping is resolved. At completion verify the result in the
+working project, record the outcome, create stop and report to the user.
